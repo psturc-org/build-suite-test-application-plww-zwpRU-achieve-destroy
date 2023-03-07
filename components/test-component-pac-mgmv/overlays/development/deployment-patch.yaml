@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-mgmv
+  namespace: build-e2e-yucy-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images@sha256:db2a9761a6ac1a2bd1e31c474acb7c63bc5ac2484a90524b84443f4859eeb26b
+        name: container-image
+        resources: {}
+status: {}
