@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component-pac-mgmv
     spec:
       containers:
-      - image: quay.io/psturc/test-images
+      - image: quay.io/psturc/test-images@sha256:db2a9761a6ac1a2bd1e31c474acb7c63bc5ac2484a90524b84443f4859eeb26b
         imagePullPolicy: Always
         name: container-image
         resources:
